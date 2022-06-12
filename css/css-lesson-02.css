@@ -6,17 +6,20 @@ body {
 	font-size:  16px;
 	font-family: 'Cardo', serif;
 	line-height: 1.7;
+	background:  url('../images/world.jpg');
+	background-size:  cover;
+	background-repeat: no-repeat;
 }
 
 #wrapper {
 	margin:  2em auto;
-	max-width:  850px;
+	max-width: 950px;
 	padding:  0 2em;
 }
 
 .article {
 	background-color: #fff;
-	padding:  20px 0;
+	padding:  20px 0; 
 	background-color:  #fff;
 }
 
@@ -32,12 +35,15 @@ h1, p{
 	margin-right:  20px;
 }
 
+p.byline {
+	color: #666;
+	font-size: 14px;
+}
+
 h1{
     font-family: 'Vollkorn', serif;
     font-weight: 600;
 	margin-top:  0;
 }
 
-.article a {
-	color: #40434E;
-}
+ 
