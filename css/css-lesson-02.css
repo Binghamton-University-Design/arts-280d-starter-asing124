@@ -1,6 +1,23 @@
 /*stylesheet*/
 
 body {
-	background-color:  #e6e6e6;
-	color: #333333;
+	background-color:  #8F00FF;
+	color: #000;
+}
+
+#wrapper {
+	margin:  2en auto;
+	max-width:  850px;
+	padding:  0 2en;
+}
+
+.article {
+	background-color: #fff;
+}
+
+img {
+	display:  block;
+	width:  100%;
+	height:  auto;
+	margin:  2en 0;
 }
