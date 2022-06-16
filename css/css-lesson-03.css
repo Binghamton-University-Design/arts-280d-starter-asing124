@@ -24,7 +24,7 @@ body {
 	background-color: #fff;
 }
 
-.article div {
+.article div{
 	background-color:rgba(0,0,0,0.1);
 }
 
@@ -60,6 +60,12 @@ body {
  .em-size-box {
  	width:  2em;
  	height:  2em;
+ 	background-color:  orange !important;
+ }
+
+  .rem-size-box {
+ 	width:  2rem;
+ 	height:  2rem;
  	background-color:  red !important;
  }
 
