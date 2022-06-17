@@ -1,4 +1,4 @@
-/*stylesheet*/
+  /*stylesheet*/
 
 body {
 	background-color:  #202030 ;
@@ -19,8 +19,8 @@ body {
 .article {
 	position: relative;
 	width: 900px;
-	overflow:  hidden;
-	padding: 60px 20px 0; 
+	overflow:  hidden; 
+	padding: 60px 0 20px 0; 
 	background-color: #fff;
 }
 
@@ -45,13 +45,13 @@ body {
 
  .half, .second-half {
  	/*width:  50%;*/
- 	with:  calc(50% - 40px);
+ 	width:  calc(50% - 40px);
  	padding: 20px;
  }
 
  .half {
  	float:  left;
- }
+ } 
 
  .second-half {
  	float:  right;
@@ -63,6 +63,7 @@ body {
  	background-color:  orange !important;
  }
 
+
   .rem-size-box {
  	width:  2rem;
  	height:  2rem;
@@ -72,7 +73,9 @@ body {
  .new-font-size {
  	font-size:  64px;
  }
+ 
  .vw-vh-demo {
+ 	background-color: purple;
  	width:  100 vw;
  	height:  100 vh;
  }
