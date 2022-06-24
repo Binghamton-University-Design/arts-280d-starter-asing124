@@ -1,49 +1,140 @@
-/*stylesheet*/
 
-/*
-tiers if cascading styles 
-
-Importance-
-
-1 transition
-2 !important
-3. animation
-4. normal
-
-Origin
-website
-user
-browser
-
-Specificity
-inline > id > class > type
-
-position
-top to bottom (closer on is the one browser uses)
-
-*/
+:root {
+  --background-color: #fff;
+  --body-color: #111;
+}
 
 body {
-	background-color: #e6e6e6;
-	color:  #333333;
+  background-color: var(--background-color);
+  color: var(--body-color);
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.5;
 }
 
-h1#main-headline {
-	font-size: 48px;
-	color:  green;
-	font-weight: 800;
+/*GENERAL*/
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1.main-headline {
-	font-size: 48px;
-	color:  red;
-	font-weight: 800;
+h1 {
+  font-size: 4.2rem
 }
 
-h1, h2. h3, h4 {
-	margin:  0;
+h2 {
+  font-size: 2.6rem;
 }
 
-p {
-	color:  purple; 
+h3 {
+  font-size: 1.6rem;
 }
+
+h4 {
+  font-size: 1rem;
+}
+
+#wrapper {
+  margin: 2rem auto;
+  max-width: 1220px;
+  padding: 0 2rem;
+}
+
+/*MASTHEAD*/
+
+#masthead, #main {
+  margin-bottom: 2rem;
+}
+
+.grid div {
+  /*background-color:rgba(0,0,0,0.04);*/
+}
+
+#logo a {
+  color: var(--body-color);
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#logo h1 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+#logo svg {
+  margin-right: .25rem;
+  height: 3.6rem;
+  width: auto;
+}
+
+/*NAV*/
+
+#nav a { 
+color: var(--body-color);
+font-weight: 300; 
+letter-spacing: 2px; 
+text-decoration-color: transparent; 
+display: inline-block; 
+width: 100%; 
+text-align: center; 
+transition: text-decoration-color .3s ease-in-out;
+}
+
+#nav a:hover, #nav a.active  { 
+  text-decoration-color: var(--body-color);
+}
+
+#nav.active {
+  display: block;
+}
+
+#nav ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#nav li {
+  flex: 3; 
+}
+
+#nav-button {
+  display: none;
+} 
+
+#nav-button-holder {
+  justify-content: flex-end;
+  display: flex; 
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.hamburger {
+  height: 24px;
+  padding: 0;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: var(--body-color); }
