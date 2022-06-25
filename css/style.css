@@ -1,49 +1,198 @@
-/*stylesheet*/
-
-/*
-tiers if cascading styles 
-
-Importance-
-
-1 transition
-2 !important
-3. animation
-4. normal
-
-Origin
-website
-user
-browser
-
-Specificity
-inline > id > class > type
-
-position
-top to bottom (closer on is the one browser uses)
-
-*/
+ 
 
 body {
-	background-color: #e6e6e6;
-	color:  #333333;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Vollkorn', monospace;
+  line-height: .7;
 }
 
-h1#main-headline {
-	font-size: 48px;
-	color:  green;
-	font-weight: 800;
+/*GENERAL*/
+
+h1, h2, h3, h4 {
+  margin: 2;
+  font-family: 'Vollkorn', sans-serif;
 }
 
-h1.main-headline {
-	font-size: 48px;
-	color:  red;
-	font-weight: 800;
+h1 {
+  font-size: 4.2rem
 }
 
-h1, h2. h3, h4 {
-	margin:  0;
+h2 {
+  font-size: 2.6rem;
 }
 
-p {
-	color:  purple; 
+h3 {
+  font-size: 1.6rem;
 }
+
+h4 {
+  font-size: 1rem;
+}
+
+#wrapper {
+  margin: 2rem auto;
+  max-width: 1220px;
+  padding: 0 2rem;
+}
+
+/*MASTHEAD*/
+
+#masthead, #main {
+  margin-bottom: 2rem;
+}
+
+.grid div {
+  background-color:rgba(260, 230, 250); 
+}
+
+#logo a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#logo h1 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+#logo svg {
+  margin-right: .25rem;
+  height: 1.6rem;
+  width: auto;
+}
+
+/*NAV*/
+
+#nav a { 
+color: #000;
+font-weight: 300; 
+letter-spacing: 2px; 
+text-decoration-color: transparent; 
+display: inline-block; 
+width: 100%; 
+text-align: center; 
+transition: text-decoration-color .4s cubic-bezier(.694, .0482, .335, 1);
+}
+
+#nav a:hover { 
+  text-decoration-color: #000;
+}
+
+#nav.active {
+  display: block;
+}
+
+#nav ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#nav li {
+  flex: 3; 
+}
+
+#nav-button {
+  display: none;
+} 
+
+#nav-button-holder {
+  justify-content: flex-end;
+  display: flex; 
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.hamburger {
+  height: 24px;
+  padding: 0;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: var(--body-color); }
+
+
+.hamburger-box {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: 0px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 24px;
+    height: 2px;
+    background-color: var(--body-color);
+    border-radius: 0px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -8px; }
+  .hamburger-inner::after {
+    bottom: -8px; }
+
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+  .hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--squeeze.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+  .hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+@media all and (max-width: 699px) {
+  #nav-button {
+    display:  block;
+  }
+  #nav li {
+    width:  100%;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+  }
+  @media all and (min-width: 700px){
+} 
