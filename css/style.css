@@ -1,11 +1,14 @@
  
 
 body {
-  background-color: #ffffff;
-  color: #333333;
+  color: #aaa9ad;
   font-family: 'Vollkorn', monospace;
-  line-height: .7;
+  /*background:  url('../Images/heart.jpg');*/
+
+  line-height: 2;
 }
+
+
 
 /*GENERAL*/
 
@@ -42,9 +45,9 @@ h4 {
   margin-bottom: 2rem;
 }
 
-.grid div {
-  background-color:rgba(260, 230, 250); 
-}
+/*.grid div {
+  background-color:rgba(255,255,255); 
+}*/
 
 #logo a {
   color: #000;
@@ -58,13 +61,49 @@ h4 {
 #logo h1 {
   letter-spacing: 1px;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 #logo svg {
   margin-right: .25rem;
   height: 1.6rem;
   width: auto;
+}
+
+/*responsive grid element*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /*NAV*/
@@ -183,6 +222,8 @@ transition: text-decoration-color .4s cubic-bezier(.694, .0482, .335, 1);
     bottom: 0;
     transform: rotate(-90deg);
     transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*RESPONSIVE*/
 
 @media all and (max-width: 699px) {
   #nav-button {
