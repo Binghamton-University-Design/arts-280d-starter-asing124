@@ -24,6 +24,13 @@ body {
   to { width: 100% }
 }
 
+/*HOME*/
+
+#intro {
+  display:  flex;
+}
+
+
 /*GENERAL*/
 
 h1, h2, h3, h4 {
@@ -240,6 +247,12 @@ transition: text-decoration-color .4s cubic-bezier(.694, .0482, .335, 1);
 
 /*RESPONSIVE*/
 
+/* for variable type sizing */
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 960));
+  }
+}
 @media all and (max-width: 699px) {
   #nav-button {
     display:  block;
@@ -251,4 +264,7 @@ transition: text-decoration-color .4s cubic-bezier(.694, .0482, .335, 1);
   }
   }
   @media all and (min-width: 700px){
+   
+
+
 } 
