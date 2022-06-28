@@ -38,7 +38,8 @@ body {
   display:  flex;
 }
 
- #work h3, #writing h3 {
+/*ask about this part*/
+ #work h3, #writing #portfolio h3 {
   letter-spacing:  1px;
   margin-bottom:  2rem;
 }
@@ -415,4 +416,23 @@ transition: text-decoration-color .3s ease-in-out;
 
 
 } 
+/* PORTFOLIO
 
+#portfolio {
+  margin-top:  2rem;
+}
+
+#portfolio .work-item {
+  padding-top:  calc((9 / 16) * 100%);
+}
+
+#portfolio p a {
+  color:  var(--body-color);
+  text-decoration-color: var(--body-color);
+  transition:  text-decoration-color .3s ease-in-out;
+}
+
+#portfolio p a: hover {
+  text-decoration-color: transparent;
+}
+*/
