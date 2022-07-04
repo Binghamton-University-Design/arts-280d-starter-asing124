@@ -19,6 +19,7 @@
 
 /* M O B I L E */
 
+
 .width-1-12-m {
   grid-column: span 1;
 }
@@ -66,6 +67,7 @@
 .width-12-12-m {
   grid-column: span 12;
 }
+
 
 /* D E S K T O P / L A P T O P */
 

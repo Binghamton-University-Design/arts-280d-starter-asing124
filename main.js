@@ -9,9 +9,9 @@
 
 });
 
- /* var i = 0;
-var txt = 'Style is a way to say who you are without having to speak'; The text 
-var speed = 50;  The speed/duration of the effect in milliseconds 
+var i = 0;
+var txt = 'COLORS'; The text 
+var speed = 100;  The speed/duration of the effect in milliseconds 
 
 function typeWriter() {
   if (i < txt.length) {
@@ -19,4 +19,4 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, speed); 
   }
-}*/
+}

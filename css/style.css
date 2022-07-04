@@ -118,14 +118,14 @@ body {
 
 /*GENERAL*/
 
-h1, h2, h4 {
+h1, h2, h4, h5 {
   margin: 2;
   font-family: 'Inspiration', cursive;
   line-height: 1;
 }
 
 h1 {
-  font-size: 4.2rem
+  font-size: 4.2rem;
 }
 
 h2 {
@@ -139,6 +139,17 @@ h3 {
 
 h4 {
   font-size: 1rem;
+}
+
+h5 {
+  font-size: 100px;
+  font-family: Didot, monospace;
+  text-align: center;
+}
+
+h6 {
+  font-size: 3.2rem;
+  font-family:  Inspiration, cursive;
 }
 
 #wrapper {
@@ -224,9 +235,22 @@ h4 {
   background-color: black;
 }
 
+.noverlay {
+  z-index:  2;
+  position: absolute;
+  bottom:0;
+  height: 35%;
+  width: 100%;
+  background-color: black;
+  opacity: .7;
+  
+}
+
 .container:hover .overlay {
   opacity: 0.5;
 }
+
+
 
 .text {
   color: white;
@@ -417,7 +441,7 @@ transition: text-decoration-color .3s ease-in-out;
 
 
 } 
-/* PORTFOLIO
+PORTFOLIO
 
 #portfolio {
   margin-top:  2rem;
@@ -436,4 +460,4 @@ transition: text-decoration-color .3s ease-in-out;
 #portfolio p a: hover {
   text-decoration-color: transparent;
 }
-*/
+
