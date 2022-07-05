@@ -41,7 +41,7 @@ body {
 }
 
 /*ask about this part*/
- #work h3 a, #BlogPosts h3 a, #WomensFashion h3 a, #home h3 a {
+ #work h3 a, #writings h3 a, #WomensFashion h3 a, #home h3 a {
   color:  var(--body-color);
   text-decoration:  none ;
 }
@@ -92,9 +92,24 @@ body {
 
 }
 
+ .writing-item img{
+  display:  block;
+  width:  100%;
+  height:  auto;
+} 
+
+.writing-item .caption {
+  font-size:  .75rem;
+  color: #566666;
+  display: block;
+  width: 100%;
+  margin-top:  .5rem;
+  margin-bottom: .2rem;
+  text-align: right;
+} 
+
 .writing-item .date-holder {
-  margin-bottom: .25em;
-}
+  margin-bottom: .25em; }
 
 .writing-item .date {
   margin: 0;
@@ -292,7 +307,7 @@ text-align: center;
 transition: text-decoration-color .3s ease-in-out;
 }
 
-#nav a:hover { 
+#nav a:hover #nav a.active { 
   text-decoration-color: var(--body-color);
 }
 
@@ -443,8 +458,9 @@ transition: text-decoration-color .3s ease-in-out;
 } 
 PORTFOLIO
 
-#portfolio {
+#portfolio, #writings {
   margin-top:  2rem;
+  margin-bottom: 2rem;
 }
 
 #portfolio .work-item {
