@@ -11,8 +11,6 @@ body {
   font-size: 28px;
   /*background:  url('../Images/heart.jpg');*/
   line-height: 2;
-
-
 }
 
 .typed-out{
@@ -200,9 +198,10 @@ h6 {
 }
 
 #logo svg {
+  display: block;
   margin-right: .25rem;
-  height: 1.6rem;
-  width: auto;
+  width: 2rem;
+  height: auto;
 }
 
 /*responsive grid element*/
@@ -254,11 +253,11 @@ h6 {
   z-index:  2;
   position: absolute;
   bottom:0;
-  height: 35%;
+  overflow: hidden;
   width: 100%;
   background-color: black;
   opacity: .7;
-  
+  min-height: 35%;
 }
 
 .container:hover .overlay {
@@ -266,6 +265,12 @@ h6 {
 }
 
 
+
+.ntext {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
 
 .text {
   color: white;
@@ -420,19 +425,25 @@ transition: text-decoration-color .3s ease-in-out;
   }
 }
 @media all and (max-width: 699px) {
-  #nav-button {
-    display:  block;
-  }
-  #nav {
-    border-bottom: 1px solid var(--body-color);
-    padding-bottom: 1rem;
-    display: none;
-  }
-  #nav li {
-    width:  100%;
-    flex-basis: 100%;
-    margin-bottom: 1rem;
-  }
+    #nav-button {
+      display:  block;
+    }
+    #nav {
+      border-bottom: 1px solid var(--body-color);
+      padding-bottom: 1rem;
+      display: none;
+    }
+    #nav li {
+      width:  100%;
+      flex-basis: 100%;
+    }
+    #nav li a br {
+      display: none;
+    }
+    #nav .verticalLine {
+      display: none;
+    }
+
   }
   @media all and (min-width: 700px){
 
@@ -456,7 +467,8 @@ transition: text-decoration-color .3s ease-in-out;
 
 
 } 
-PORTFOLIO
+
+/*PORTFOLIO*/
 
 #portfolio, #writings {
   margin-top:  2rem;
@@ -475,5 +487,11 @@ PORTFOLIO
 
 #portfolio p a: hover {
   text-decoration-color: transparent;
+}
+
+.fashion img {
+  display: block;
+  width: 100%;
+  height:  auto;
 }
 
